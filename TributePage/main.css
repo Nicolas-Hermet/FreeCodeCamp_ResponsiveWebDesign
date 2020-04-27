@@ -1,6 +1,6 @@
 body {
-    background-color: rgba(0, 0, 0, 0.842);
-    color: rgba(255, 255, 255, 0.856);
+    background-color: #303030;
+    color: #d4d4d4;
 }
 
 #main {
@@ -34,4 +34,5 @@ img {
 
 a {
     text-decoration: none;
+    color: #D6515A;
 }

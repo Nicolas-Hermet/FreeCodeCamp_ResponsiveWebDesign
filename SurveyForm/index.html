@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Surveyr Form</title>
+</head>
+<body>
+    <img src="./img/pink-fuck.jpg" alt="">
+    <div>
+        <h1 id="title">Form you wouldn't want to fill</h1>
+        <p id="description">Seriously : there no need for more explanations here</p>
+        <form action="submit" id="survey-form">
+            <label for="name" id="name-label">Do you like cheese?</label>
+            <input type="text" id="name" name="name" placeholder="Whatever name you want, I don't care" required>
+            
+            <label for="email" id="email-label">Do you like burger?</label>
+            <input type="email" id="email" name="email" placeholder="A valid email format that no one cares" required>
+            
+            <label for="number" id="number-label">Do you like avocado?</label>
+            <input type="number" id="number" name="number" min="3" max="3" placeholder="Type a number, as long as it is 3" required>
+
+            
+
+            <label for="dropdown">What describes you best ?</label>
+            <select id="dropdown" name="dropdown">
+                <option value="1">You have no friends to talk so you decide to check on that form ?</option>
+                <option value="2">You get really bored and decided to give me a review ?</option>
+                <option value="3">You like to hurt yourself by watchnig at poor styled web sites ?</option>
+            </select>
+
+
+            <label for="classification">Are you classified as human ?</label>
+            <label for="negative">
+                <input type="radio" id="negative" name="classification" value=0>Negative I'm a meat popsicle
+            </label>
+            <label for="positive">
+                <input type="radio" id="positive" name="classification" value=1>Yes
+            </label>
+
+            <label for="improvments">What would you think needs improvment ? (check all that apply)</label>
+            <label for="css">
+                <input type="checkbox" id="css" name="improvments" value=0>CSS
+            </label>
+            <label for="questions">
+                <input type="checkbox" id="questions" name="improvments" value=1>The quality of questions asked
+            </label>
+            <label for="image">
+                <input type="checkbox" id="image" name="improvments" value=1>The background image
+            </label>
+            
+
+            <label for="comments">
+                <textarea name="comments" placeholder="Leave your comments here">If you have anything to say, say it now</textarea>
+            </label>
+
+            <button type="submit" id="submit">Send this away !</button>
+
+
+
+        </form>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
+
+<!-- <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@eliapelle?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Elia Pellegrini"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Elia Pellegrini</span></a> -->
+<!-- <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@olegixanovpht?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Oleg Ivanov"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Oleg Ivanov</span></a> -->

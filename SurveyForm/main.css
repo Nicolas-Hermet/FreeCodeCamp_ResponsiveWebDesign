@@ -1,16 +1,24 @@
-/* body {
-    background: url('./img/pink-fuck.jpg') no-repeat center center fixed;;
-} */
+::selection {
+    background: #fdb5b5;
+  }
+
+html{
+    height: 100%;
+}
 
 body {
     position: relative;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    height: 100%;
 }
 
 body img {
-    position: absolute;
+    position: fixed;
+    top: 0px;
+    left: 0px;
     z-index: 0;
     height: auto;
     width: 100%;
@@ -23,13 +31,33 @@ body div {
     justify-content: space-between;
     align-items: center;
     z-index: 1;
-    background-color: rgba(0, 0, 255, 0.479);
+    background-color: rgba(31, 31, 100, 0.479);
     color: whitesmoke;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 20px 50px 20px;
+}
+
+header * {
+    margin: auto;
 }
 
 form {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 }
+
+.credits {
+    position: absolute;
+    bottom: 1%;
+    right: 1%;
+    font-size: 9px;
+    z-index: 3;
+  }

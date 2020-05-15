@@ -24,14 +24,13 @@ body img {
     width: 100%;
 }
 
-body div {
+body > div {
     position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     z-index: 1;
-    background-color: rgba(31, 31, 100, 0.479);
     color: whitesmoke;
 }
 
@@ -48,10 +47,25 @@ header * {
 }
 
 form {
+    min-width: 60em;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
+    background-color: rgba(31, 31, 100, 0.479);
+    padding: 2rem;
+}
+
+.form-group {
+    width: 100%;
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form-group * {
+    width: 100%;
 }
 
 .credits {

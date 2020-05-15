@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
-    <title>Surveyr Form</title>
+    <title>Survey Form</title>
 </head>
 <body>
     <img src="./img/pink-fuck.jpg" height="50%" width="50%">
@@ -14,47 +14,58 @@
             <p id="description">Seriously : there no need for more explanations here</p>
         </header>
         <form action="submit" id="survey-form">
-            <label for="name" id="name-label">Whatever name you want, I don't care</label>
-            <input type="text" id="name" name="name" placeholder="Name" required>
+            <div class="form-group">
+                <label for="name" id="name-label">Whatever name you want, I don't care</label>
+                <input type="text" id="name" name="name" placeholder="Name" required>
+            </div>
             
-            <label for="email" id="email-label">A valid email format that I won't use anyway</label>
-            <input type="email" id="email" name="email" placeholder="Email" required>
+            <div class="form-group">
+                <label for="email" id="email-label">A valid email format that I won't use anyway</label>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+            </div>
             
-            <label for="number" id="number-label">Type any number you'd like, as long as it is 3</label>
-            <input type="number" id="number" name="number" min="3" max="3" placeholder="Number" required>
+            <div class="form-group">
+                <label for="number" id="number-label">Type any number you'd like, as long as it is 3</label>
+                <input type="number" id="number" name="number" min="3" max="3" placeholder="Number" required>
+            </div>
 
             
+            <div class="form-group">
+                <label for="dropdown">What describes you best ?</label>
+                <select id="dropdown" name="dropdown">
+                    <option value="1">You have no friends to talk so you decide to check on that form ?</option>
+                    <option value="2">You get really bored and decided to give me a review ?</option>
+                    <option value="3">You like to hurt yourself by watchnig at poor styled web sites ?</option>
+                </select>
+            </div>
 
-            <label for="dropdown">What describes you best ?</label>
-            <select id="dropdown" name="dropdown">
-                <option value="1">You have no friends to talk so you decide to check on that form ?</option>
-                <option value="2">You get really bored and decided to give me a review ?</option>
-                <option value="3">You like to hurt yourself by watchnig at poor styled web sites ?</option>
-            </select>
+            <div class="form-group">
+                <label for="classification">Are you classified as human ?</label>
+                <label for="negative">
+                    <input type="radio" id="negative" name="classification" value=0>Negative I'm a meat popsicle
+                </label>
+                <label for="positive">
+                    <input type="radio" id="positive" name="classification" value=1>Yes
+                </label>
+            </div>
 
-
-            <label for="classification">Are you classified as human ?</label>
-            <label for="negative">
-                <input type="radio" id="negative" name="classification" value=0>Negative I'm a meat popsicle
-            </label>
-            <label for="positive">
-                <input type="radio" id="positive" name="classification" value=1>Yes
-            </label>
-
-            <label for="improvments">What would you think needs improvment ? (check all that apply)</label>
-            <label for="css">
-                <input type="checkbox" id="css" name="improvments" value=0>CSS
-            </label>
-            <label for="questions">
-                <input type="checkbox" id="questions" name="improvments" value=1>The quality of questions asked
-            </label>
-            <label for="image">
-                <input type="checkbox" id="image" name="improvments" value=1>The background image
-            </label>
+            <div class="form-group">
+                <label for="improvments">What would you think needs improvment ? (check all that apply)</label>
+                <label for="css">
+                    <input type="checkbox" id="css" name="improvments" value=0>CSS
+                </label>
+                <label for="questions">
+                    <input type="checkbox" id="questions" name="improvments" value=1>The quality of questions asked
+                </label>
+                <label for="image">
+                    <input type="checkbox" id="image" name="improvments" value=1>The background image
+                </label>
+            </div>
             
-
-            <label for="comments">If you have anything to say, say it now</label>
-            <textarea name="comments" placeholder="Leave your comments here"></textarea>
+            <div class="form-group">
+                <label for="comments">If you have anything to say, say it now</label>
+                <textarea name="comments" placeholder="Leave your comments here"></textarea>
+            </div>
 
             <button type="submit" id="submit">Send this away !</button>
 

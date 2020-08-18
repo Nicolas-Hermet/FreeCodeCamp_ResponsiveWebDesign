@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+body * {
+    display: flex;
+    flex-direction: row;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    margin: 5px;
+}
+
+@media (min-width: 400px) {
+    body * {
+        display: flex;
+        flex-direction: column;
+    }
+
+} 

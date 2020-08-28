@@ -17,6 +17,7 @@ body {
     align-content: center;
     /* justify-items: center; */
     align-items: center;
+    font-size: 24px;
 }
 
 nav img {

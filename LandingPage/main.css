@@ -26,13 +26,8 @@ nav img {
   margin: 0;
 }
 
-#menu-toggle {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
 
-.desktop {
+.mobile {
   display: none;
 }
 

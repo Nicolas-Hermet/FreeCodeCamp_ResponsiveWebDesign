@@ -8,15 +8,25 @@
 </head>
 <body>
     <header id="header">
-        <img src="https://drive.google.com/file/d/1xUEMr-_-o8M8UYQdaa6PkYaW2vGxdvEJ/view?usp=sharing" alt="logo" width="24px" height="24px" id="header-img">
         <nav id="nav-bar">
-            <ul>
-                <li><a href="#features" class="nav-link">features</a></li>
-                <li><a href="#for-dummies" class="nav-link">for-dummies</a></li>
-                <li><a href="#pricing" class="nav-link">pricing</a></li>
-            </ul>
+            <img src="logo_yellow_crap.png" alt="logo" id="header-img">
+            <div id="menu-toggle">
+                <div class="burger">
+                    <input type="checkbox" class="desktop">
+                    <span class="desktop"></span>
+                    <span class="desktop"></span>
+                    <span class="desktop"></span>
+                
+                    <ul class="menu-text">
+                        <li class="menu-item"><a href="#features" class="nav-link">features</a></li>
+                        <li class="menu-item"><a href="#for-dummies" class="nav-link">for-dummies</a></li>
+                        <li class="menu-item"><a href="#pricing" class="nav-link">pricing</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
+
     <div class="form">
         <form action="https://www.freecodecamp.com/email-submit" id="form">
             <label for="email">Your e-mail: </label>
@@ -24,23 +34,34 @@
             <input id="submit" type="submit" value="I ♥ yellow updates" class="btn">
         </form>
     </div>
+    
     <div class="container">
-        <section id="features"></section>
+        <section id="features">
+            <p>Ici ce sont les features</p>
+        </section>
+        
         <section id="for-dummies">
+            <p>Ici la vidéo</p>
             <iframe id="video"
                 width="560"
                 height="315"
-                src="https://www.youtube.com/embed/kkvzHjuZAb8"
+                src="https://www.youtube.com/embed/yKNxeF4KMsY"
                 frameborder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen>
             </iframe>
         </section>
-        <section id="pricing"></section>
+    
+        <section id="pricing">
+            <p>Ici ce sont les tarifs prohibitifs</p>
+
+        </section>
     </div>
+
     <footer>
 
     </footer>
+    
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>

@@ -139,4 +139,17 @@ nav img {
     flex-direction: column;
   }
 
+  .menu-text {
+    background-color: #41444b;
+    position: fixed;
+    margin: auto;
+    right: 0px;
+    width: 300px;
+    height: 100%;
+    text-align: end;
+  }
+
+  .menu-item {
+    margin: 10px;
+  }
 } 

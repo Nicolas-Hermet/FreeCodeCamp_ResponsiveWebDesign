@@ -1,3 +1,7 @@
+:root {
+  --nav-bar-height: 100px;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -7,6 +11,28 @@ body {
 	margin: 0;
 	background-color: #f6f4e6;
 	overflow-x: hidden;
+}
+
+nav {
+  position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: var(--nav-bar-height);
+	padding: 0 5vw;
+	background-color: #41444b;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	font-size: 24px;
+}
+
+nav img {
+  width: 125px;
+  height: auto;
+  margin: 0;
 }
 
 .video {
@@ -23,7 +49,7 @@ body {
 }
 
 form {
-	margin-top: 100px;
+	margin-top: var(--nav-bar-height);
 }
 
 @media screen and (max-width: 500px) {

@@ -1,22 +1,17 @@
-header {
-  /* width: 100%; */
-  /* margin: 0 auto; */
-}
-
 nav {
-  /* width: 100%; */
-  padding: 0 20px;
-  margin: 0;
-  top: 0px;
-  left: 0px;
-  background-color: #41444b;
+  position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 100px;
+	padding: 0 5vw;
+	background-color: #41444b;
 
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-content: center;
-  align-items: center;
-  font-size: 24px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	font-size: 24px;
 }
 
 nav img {
@@ -144,10 +139,11 @@ nav img {
     background-color: #41444b;
     position: fixed;
     margin: auto;
-    right: 0px;
-    width: 50vw;
+    right: 0;
+		width: 50vw;
+		height: 100vh;
     min-width: 300px;
-    height: 100%;
+    
     text-align: end;
   }
 

@@ -1,11 +1,4 @@
-body {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    background-color: #f6f4e6;
-}
-
- nav {
+nav {
     padding: 10px;
     top: 0px;
     left: 0px;
@@ -15,7 +8,6 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-content: center;
-    /* justify-items: center; */
     align-items: center;
     font-size: 24px;
 }

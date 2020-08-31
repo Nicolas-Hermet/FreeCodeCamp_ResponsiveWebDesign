@@ -1,15 +1,14 @@
 nav {
-    padding: 10px;
-    top: 0px;
-    left: 0px;
-    background-color: #41444b;
+  top: 0px;
+  left: 0px;
+  background-color: #41444b;
 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-content: center;
-    align-items: center;
-    font-size: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  font-size: 24px;
 }
 
 nav img {
@@ -24,32 +23,34 @@ nav img {
 }
 
 .burger input {
-    display: block;
-    width: 40px;
-    height: 32px;
-    position: absolute;
-    top: -3px;
-    left: -8px;
-    
-    cursor: pointer;
-    
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -3px;
+  left: -8px;
+  
+  cursor: pointer;
+  
+  opacity: 0; 
     opacity: 0; 
-    z-index: 2;
-    
-    -webkit-touch-callout: none;
+  opacity: 0; 
+  z-index: 2;
+  
+  -webkit-touch-callout: none;
 }
 
 .burger span {
-    display: block;
-    background-color: #fddb3a;
-    width: 33px;
-    height: 4px;
-    margin-bottom: 5px;
-    border-radius: 3px;
-    z-index: 1;
+  display: block;
+  background-color: #fddb3a;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  border-radius: 3px;
+  z-index: 1;
 
-    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                opacity 0.55s ease;
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
 }
 
 .burger span:nth-child(2)
@@ -80,41 +81,43 @@ nav img {
 
 
 .menu-text {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
 }
 
 .menu-item {
-    list-style: none;
-    color: #fddb3a;
-    margin: 5px;
+  list-style: none;
+  color: #fddb3a;
+  margin: 5px;
 }
 
 .nav-link {
-    text-decoration: none;
-    color: #fddb3a;
-    transition: color 0.3 ease;
+  text-decoration: none;
+  color: #fddb3a;
+  transition: color 0.3 ease;
 }
 
 .nav-link:hover {
-    color: #f6f4e6;
+  color: #f6f4e6;
 }
 
+/* Above 700px => desktop */
 @media (min-width: 700px) {
   .menu-text {
     list-style: none;
     display: flex;
     flex-direction: row;
+  }
+  
+  .burger span {
+    display: none;
+  }
+  
 }
 
-.burger span {
-  display: none;
-}
 
-}
-
-
+/* Under 700px => tabs & mobile */
 @media (max-width: 700px) {
   .burger {
     display: block;

@@ -1,0 +1,76 @@
+.form {
+    background: url(../img/andrew-buchanan-pVMhOC7HnzQ-unsplash.jpg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: bold;
+    text-transform: uppercase;
+    /* width: 200px; */
+    color: #41444B;
+    margin: 0em;
+}
+
+.form p {
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 325px;
+    color: #52575D;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    display: none;
+}
+
+form input {
+    margin: 20px;
+}
+
+#email {
+    width: 430px;
+    padding: 20px;;
+    height: 61px;
+    background: #F6F4E6;
+    border-radius: 8px;
+    border: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+}
+
+#submit {
+    width: 194px;
+    height: 66px;
+    background: #41444B;
+    border-radius: 8px;
+    border: none;
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #F6F4E6;
+    white-space: initial;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}

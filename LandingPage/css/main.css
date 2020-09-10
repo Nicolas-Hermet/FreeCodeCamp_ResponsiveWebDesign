@@ -7,20 +7,25 @@
 }
 
 body {
-  padding: 0;
+	padding: 0;
 	margin: 0;
 	background-color: #f6f4e6;
 	overflow-x: hidden;
+	font: roboto;
+}
+
+::selection {
+	color: #f6f4e6;
+	background-color: #52575D;
 }
 
 nav {
-  position: fixed;
+	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
 	height: var(--nav-bar-height);
 	padding: 0 5vw;
-	background-color: #41444b;
 
 	display: flex;
 	justify-content: space-between;

@@ -35,6 +35,14 @@ nav img {
   margin: 0;
 }
 
+#header-img-brown {
+	display: block;
+}
+
+#header-img-yellow {
+	display: none;
+}
+
 .video {
 	max-width: 50vw;
 	height: 300px;
@@ -48,11 +56,19 @@ nav img {
 	height: 100%;
 }
 
-form {
-	margin-top: var(--nav-bar-height);
-}
+@media screen and (max-width: 700px) {
+	nav {
+		background-color: #41444b;
+	}
 
-@media screen and (max-width: 500px) {
+	#header-img-brown {
+		display: none;
+	}
+
+	#header-img-yellow {
+		display: block;
+	}
+
 	.video {
 		max-width: 100%;
 	}

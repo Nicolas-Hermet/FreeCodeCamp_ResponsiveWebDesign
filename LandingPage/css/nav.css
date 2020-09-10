@@ -20,7 +20,7 @@
 
 .burger span {
   display: block;
-  background-color: #fddb3a;
+  background-color: #41444b;
   width: 33px;
   height: 4px;
   margin-bottom: 5px;
@@ -62,17 +62,18 @@
   list-style: none;
   display: flex;
   flex-direction: row;
+  font-weight: bold;
 }
 
 .menu-item {
   list-style: none;
-  color: #fddb3a;
+  color: #41444b;
   margin: 5px;
 }
 
 .nav-link {
   text-decoration: none;
-  color: #fddb3a;
+  color: #41444b;
   transition: color 0.3 ease;
 }
 
@@ -101,6 +102,9 @@
     display: block;
     position: relative;
   }
+  .burger span {
+    background-color: #fddb3a;
+  }
 
   .burger input:not(:checked) ~ .menu-text {
     display: none;
@@ -126,5 +130,10 @@
 
   .menu-item {
     margin: 10px;
+    color: #fddb3a;
+  }
+  
+  .nav-link {
+    color: #fddb3a;
   }
 } 
